@@ -115,5 +115,5 @@ void kernel_main(void)
     terminal_initialize();
 
     /* Write a string to the terminal */
-    terminal_writestring("Hello, kernel World!");
+    terminal_writestring("Hello, kernel World!\n");
 }
