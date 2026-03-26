@@ -6,6 +6,9 @@ QEMU = qemu-system-i386
 
 all: myos
 
+prepare:
+	@export PATH="$HOME/opt/cross/bin:$PATH"
+
 boot: boot.s
 	$(AS) boot.s -o boot.o
 
