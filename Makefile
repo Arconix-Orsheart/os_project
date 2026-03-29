@@ -1,6 +1,11 @@
 CC = i686-elf-gcc
 AS = i686-elf-as
-CFLAGS = -ffreestanding -O2 -Wall -Wextra
+
+# Default CFLAGS:
+CFLAGS?=-O2 -g
+
+# Add mandatory options to CFLAGS:
+CFLAGS:=$(CFLAGS) -Wall -Wextra
 
 QEMU = qemu-system-i386
 
